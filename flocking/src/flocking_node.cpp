@@ -55,20 +55,20 @@ void position_callback(const geometry_msgs::msg::Point::SharedPtr msg)
 
     std::vector<double> calculate_separation()
     {
-        // Example separation logic
-        return {0.1, 0.1, 0.0}; // Adjust based on agent positions
+        // separation 
+        return {0.1, 0.1, 0.0}; // agent positions
     }
 
     std::vector<double> calculate_alignment()
     {
-        // Example alignment logic
-        return {0.1, 0.1, 0.0}; // Adjust based on agent headings
+        // alignment 
+        return {0.1, 0.1, 0.0}; // agent headings
     }
 
     std::vector<double> calculate_cohesion()
     {
-        // Example cohesion logic
-        return {0.1, 0.1, 0.0}; // Adjust based on agent positions
+        //  cohesion 
+        return {0.1, 0.1, 0.0}; //  agent positions
     }
 
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_;
